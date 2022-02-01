@@ -1,17 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <SearchForm />
+    <Info />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SearchForm from "./components/SearchForm.vue";
+import Info from "./components/Info.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    SearchForm,
+    Info,
+  },
+};
 </script>
 
 <style>
@@ -19,8 +23,12 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body {
+  background-color: rgb(0, 162, 255);
 }
 </style>
